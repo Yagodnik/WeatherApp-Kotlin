@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             var response: String?
 
             try {
-                response = URL("https://api.openweathermap.org/data/2.5/weather?id=$cityId&appid=38fc95d3e8022eed2ac829478c1d6b18").readText(Charsets.UTF_8)
+                response = URL("https://api.openweathermap.org/data/2.5/weather?id=$cityId&appid=KEY").readText(Charsets.UTF_8)
             } catch (e: Exception) {
                 response = null
             }
